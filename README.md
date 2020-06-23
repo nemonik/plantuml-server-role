@@ -10,17 +10,17 @@ Requires Kubernetes, MetalLb and private Docker Registry installed.
 
 ## Role Variables
 
-| Variable                | Required | Default     | Choices           | Comments                                                                            |
-|-------------------------|----------|-------------|-------------------|-------------------------------------------------------------------------------------|
-| docker_timeout          | yes      | 300         | Integer value     | number of seconds before docker pull timeout                                        |
-| docker_retries          | yes      | 60          | Integer value     | number of tries for docker pull                                                     |
-| docker_delay            | yes      | 10          | Integer value     | delay in seconds between pull retries                                               |
-| default_retries         | yes      | 60          | Integer value     | default number of retries                                                           |
-| default_delay           | yes      | 60          | Integer value     | default delay in seconds between retries                                            |
-| plantuml_host           | yes      | not defined | String IP or FDQN | IP or FDQN for                                                                      |
-| plantuml_port           | yes      | 80          | Integer value     | port to listen on                                                                   |
-| plantuml_server_version | yes      | latest      | String value      | container image tag matching https://hub.docker.com/r/plantuml/plantuml-server/tags |
-| images_cache_path       | no       | not defined | Path              | path to folder used to cache saved Docker images                                    |
+| Variable                | Required | Default     | Choices       | Comments                                                                            |
+|-------------------------|----------|-------------|---------------|-------------------------------------------------------------------------------------|
+| docker_timeout          | yes      | 300         | Integer value | Number of seconds before docker pull timeout                                        |
+| docker_retries          | yes      | 60          | Integer value | Number of tries for docker pull                                                     |
+| docker_delay            | yes      | 10          | Integer value | Delay in seconds between pull retries                                               |
+| default_retries         | yes      | 60          | Integer value | Default number of retries                                                           |
+| default_delay           | yes      | 60          | Integer value | Default delay in seconds between retries                                            |
+| plantuml_host           | yes      | not defined | String IP     | IP address to expose as                                                             |
+| plantuml_port           | yes      | 80          | Integer value | Port to listen on                                                                   |
+| plantuml_server_version | yes      | latest      | String value  | Container image tag matching https://hub.docker.com/r/plantuml/plantuml-server/tags |
+| images_cache_path       | no       | not defined | Path          | Path to folder used to cache saved Docker images                                    |
 
 ## Example Playbook
 
