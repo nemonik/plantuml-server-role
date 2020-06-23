@@ -1,0 +1,8 @@
+---
+# defaults file for plantuml-server
+default_retries: 60
+default_delay: 10
+docker_timeout: 300
+docker_retries: 60
+plantuml_port: 80
+plantuml_server_version: latest
